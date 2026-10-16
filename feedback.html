@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Haven - Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Book Haven</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#books">Books</a>
+            <a href="index.html#cart">Cart</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="feedback-form-section">
+            <h2>Your Feedback Matters!</h2>
+            <p>We'd love to hear from you.</p>
+
+            <form id="feedback-form">
+                <label for="name">Your Name *</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    maxlength="100"
+                    required
+                >
+
+                <label for="email">Your Email *</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    maxlength="254"
+                    required
+                >
+
+                <label for="comment">Your Feedback *</label>
+                <textarea
+                    id="comment"
+                    name="comment"
+                    rows="5"
+                    placeholder="Type your feedback here..."
+                    maxlength="2000"
+                    required
+                ></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+
+            <p id="feedback-message" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Book Haven. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="index.html#about">About Us</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="mailto:feedback@bookhaven.com">Contact Us</a>
+        </div>
+    </footer>
+
+</body>
+</html>
