@@ -1,0 +1,187 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #222222;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    background-color: #174ea6;
+    color: white;
+    padding: 15px 25px;
+}
+
+header h1 {
+    color: white;
+    margin: 0;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e8f0fe;
+}
+
+.hero h2 {
+    color: #174ea6;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+button {
+    background-color: #174ea6;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #0d3475;
+}
+
+#explore-button {
+    display: block;
+    margin: 20px auto;
+}
+
+#books,
+#cart,
+#about {
+    padding: 30px 20px;
+}
+
+#books > h2,
+#cart > h2,
+#about > h2 {
+    text-align: center;
+    color: #174ea6;
+}
+
+.book-list {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.book-card {
+    background-color: white;
+    width: 240px;
+    padding: 20px;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #00000020;
+    text-align: center;
+}
+
+.book-cover {
+    font-size: 60px;
+}
+
+.book-card h3 {
+    color: #174ea6;
+}
+
+.book-card .price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#cart {
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #dddddd;
+    padding: 12px 0;
+}
+
+.remove-button {
+    background-color: #b3261e;
+    padding: 8px 12px;
+}
+
+.remove-button:hover {
+    background-color: #7f1914;
+}
+
+#cart-total {
+    color: #174ea6;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: #174ea6;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        margin-right: auto;
+    }
+
+    .book-card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    #cart {
+        margin: 10px;
+        text-align: center;
+    }
+}
