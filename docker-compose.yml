@@ -1,0 +1,15 @@
+
+services:
+  db:
+    image: mysql:8.4
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: online_bookstore
+      MYSQL_USER: bookstore_user
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - bookstore_data:/var/lib/mysql
+
+volumes:
+  bookstore_data:
