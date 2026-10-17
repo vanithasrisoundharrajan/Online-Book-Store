@@ -3,11 +3,15 @@ services:
   db:
     image: mysql:8.4
     restart: unless-stopped
+    command: ["--skip-grant-tables", "--skip-networking"]
+
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: online_bookstore
       MYSQL_USER: bookstore_user
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    ports:
+      - "3306:3306"
     volumes:
       - bookstore_data:/var/lib/mysql
 
